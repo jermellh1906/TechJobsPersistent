@@ -9,8 +9,12 @@ namespace TechJobsPersistent.Models
         public int SkillId { get; set; }
         public Skill Skill { get; set; }
 
-        public JobSkill()
+        public JobSkill(){}
+
+        public JobSkill(Job job, int skillId) 
         {
+            this.Job = job;
+            this.SkillId = skillId;
         }
     }
 }
